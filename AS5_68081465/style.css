@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(pic/bg4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px 10%;
+    position: relative;
+}
+
+nav{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 150px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.login-btn{
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 15px;
+    font-weight: 400;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    color: white;
+    background: linear-gradient(45deg, #ff512f, #dd2476);
+    font-size: 16px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background: linear-gradient(45deg, #24c6dc, #514a9d);
+    transform: scale(1.1);
+}
+
+.content{
+    margin-top: 10%;
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+}
+
+.content h1{
+    font-size: 80px;
+    color: white;
+}
+
+.content p{
+    margin: 10px 0 30px;
+    color: #e0e0e0;
+    font-size: 18px;
+}
+
+.Features-img{
+    width: 400px;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+}
+
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+
+.Features-img.anim{
+    animation-delay: 1.5s;
+}
+
+.content h1.anim{
+    animation-delay: 0.5s;
+}
+
+.content p.anim{
+    animation-delay: 1s;
+}
+
+.content .btn.anim{
+    animation-delay: 1.5s;
+}
+
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
