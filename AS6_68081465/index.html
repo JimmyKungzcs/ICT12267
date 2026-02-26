@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ประดิภาส ภัทรพงศ์ไพบูลย์ 68081465</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <h2 class="logo">MyPortfolio</h2>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero">
+    <div class="hero-content">
+        <h1>สวัสดี ฉันคือนักพัฒนาเว็บไซต์</h1>
+        <p>สร้างเว็บไซต์สวยงาม ด้วย HTML และ CSS</p>
+        <button class="btn">ดูผลงาน</button>
+    </div>
+</header>
+
+<!-- About -->
+<section class="about">
+    <h2>เกี่ยวกับฉัน</h2>
+    <p>
+        ฉันเป็นนักศึกษาที่มีความสนใจในการพัฒนาเว็บไซต์
+        และกำลังเรียนรู้การสร้างเว็บไซต์แบบ Responsive
+        เพื่อให้ใช้งานได้ทุกอุปกรณ์
+    </p>
+</section>
+
+<!-- Gallery -->
+<section class="gallery">
+    <h2>แกลเลอรี่</h2>
+    <div class="gallery-grid">
+        <div class="img-box">
+            <img src="https://picsum.photos/400?1" alt="pic1">
+        </div>
+        <div class="img-box">
+            <img src="https://picsum.photos/400?2" alt="pic2">
+        </div>
+        <div class="img-box">
+            <img src="https://picsum.photos/400?3" alt="pic3">
+        </div>
+        <div class="img-box">
+            <img src="https://picsum.photos/400?4" alt="pic4">
+        </div>
+    </div>
+</section>
+
+<!-- Cards -->
+<section class="cards">
+    <h2>ผลงานของฉัน</h2>
+    <div class="card-container">
+        <div class="card">
+            <img src="https://picsum.photos/300/180?random=1" alt="work1">
+            <h3>เว็บไซต์ร้านกาแฟ</h3>
+            <p>เว็บไซต์ร้านกาแฟ responsive</p>
+            <button class="btn-small">ดูเพิ่มเติม</button>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/300/180?random=2" alt="work2">
+            <h3>Portfolio</h3>
+            <p>เว็บไซต์แนะนำตัว</p>
+            <button class="btn-small">ดูเพิ่มเติม</button>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/300/180?random=3" alt="work3">
+            <h3>Landing Page</h3>
+            <p>เว็บไซต์ธุรกิจ</p>
+            <button class="btn-small">ดูเพิ่มเติม</button>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/300/180?random=4" alt="work4">
+            <h3>Gallery</h3>
+            <p>เว็บไซต์แสดงรูปภาพ</p>
+            <button class="btn-small">ดูเพิ่มเติม</button>
+        </div>
+    </div>
+</section>
+
+<section class="contact">
+    <h2>ติดต่อฉัน</h2>
+    <p>ส่งข้อความมาได้เลย!</p>
+    <form class="contact-form">
+        <input type="text" placeholder="ชื่อของคุณ">
+        <input type="email" placeholder="อีเมล">
+        <textarea placeholder="ข้อความ" rows="4"></textarea>
+        <button type="submit" class="btn">ส่งข้อความ</button>
+    </form>
+</section>
+
+<footer>
+    <h3>ประดิภาส ภัทรพงศ์ไพบูลย์ 68081465</h3>
+    <p>Copyright 2026</p>
+    <p>Facebook | Instagram | GitHub</p>
+</footer>
+
+<button onclick="window.scrollTo({top:0, behavior:'smooth'})" class="scrolltop" id="scrolltop">▲</button>
+
+<script>
+    window.onscroll = function() {
+        var btn = document.getElementById('scrolltop');
+        if (window.scrollY > 300) {
+            btn.style.display = 'block';
+        } else {
+            btn.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>
